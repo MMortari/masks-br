@@ -1,8 +1,22 @@
 {
   "name": "masks-br",
+  "description": "Máscaras nacionais para Javascript",
   "version": "1.0.0",
   "main": "lib/index.js",
+  "author": "Matheus Mortari",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMortari/masks-br"
+  },
+  "keywords": [
+    "masks",
+    "mascaras",
+    "mask",
+    "mascara",
+    "brasil",
+    "brazil"
+  ],
   "scripts": {
     "build": "tsc"
   },
