@@ -1,0 +1,12 @@
+{
+  "name": "masks-br",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
