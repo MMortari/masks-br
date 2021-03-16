@@ -23,7 +23,7 @@ export declare const cleanMoneyMask: (value: string) => number;
  */
 export declare const cpfMask: (value: string | number) => string;
 /**
- * Máscará de RG
+ * Máscara de RG
  * @example
  * rgMask('698554859')
  * // returns 69.855.485-9
@@ -31,7 +31,7 @@ export declare const cpfMask: (value: string | number) => string;
  */
 export declare const rgMask: (value: string | number) => string;
 /**
- * Máscará de CNPJ
+ * Máscara de CNPJ
  * @example
  * cnpjMask('34234234234234')
  * // returns 34.234.234/2342-34
@@ -39,7 +39,7 @@ export declare const rgMask: (value: string | number) => string;
  */
 export declare const cnpjMask: (value: string | number) => string;
 /**
- * Máscará de Celular
+ * Máscara de Celular
  * @example
  * celularMask('11958625974')
  * // returns (11) 95862-5974
@@ -50,7 +50,7 @@ export declare const cnpjMask: (value: string | number) => string;
  */
 export declare const celularMask: (value: string | number) => string;
 /**
- * Máscará de Telefone
+ * Máscara de Telefone
  * @example
  * telefoneMask('1195862597')
  * // returns (11) 9586-2597
@@ -58,7 +58,7 @@ export declare const celularMask: (value: string | number) => string;
  */
 export declare const telefoneMask: (value: string | number) => string;
 /**
- * Máscará de CEP
+ * Máscara de CEP
  * @example
  * cepMask('06985596')
  * // returns 06985-596
@@ -66,7 +66,7 @@ export declare const telefoneMask: (value: string | number) => string;
  */
 export declare const cepMask: (value: string | number) => string;
 /**
- * Máscará de Número
+ * Máscara de Número
  * @example
  * numeroMask(123456.789)
  * // returns 123.456,789
@@ -76,7 +76,7 @@ export declare const numeroMask: (initialValue: string | number, config?: {
     minimumFractionDigits: number;
 }) => string;
 /**
- * Máscará de Porcentagem
+ * Máscara de Porcentagem
  * @example
  * porcentagemMask(26.95)
  * // returns 26,95%
@@ -84,7 +84,7 @@ export declare const numeroMask: (initialValue: string | number, config?: {
  */
 export declare const porcentagemMask: (initialValue: string | number) => string;
 /**
- * Máscará de Dinheiro
+ * Máscara de Dinheiro
  * @example
  * dinheiroMask(123456.78)
  * // returns R$ 123.456,78
@@ -95,4 +95,12 @@ interface DinheiroMaskConfig {
     currency?: string;
     locale?: string;
 }
+/**
+ * Máscara de Cartão
+ * @example
+ * cardMask(1234567891234567)
+ * // returns '1234 5678 9123 4567'
+ * @param {string} value Valor com máscara
+ */
+export declare const cardMask: (initialValue: string | number) => string;
 export {};
