@@ -100,7 +100,14 @@ interface DinheiroMaskConfig {
  * @example
  * cardMask(1234567891234567)
  * // returns '1234 5678 9123 4567'
- * @param {string} value Valor com máscara
+ * @param {string} value
  */
 export declare const cardMask: (initialValue: string | number) => string;
+/**
+ * Máscara de boleto
+ * @exampe
+ * bankslipMask('33290001151283004769711002180906987700000010000')
+ * // returns '33290.00115 12830.047697 11002.180906 9 87700000010000'
+ */
+export declare const bankslipMask: (initialValue: string | number) => string;
 export {};

@@ -125,3 +125,14 @@ const masked = cardMask(1234567891234567);
 
 console.log(masked); // '1234 5678 9123 4567'
 ```
+
+### Boleto
+
+```javascript
+import { bankslipMask } from 'masks-br';
+// ou const { bankslipMask } = require('masks-br');
+
+const masked = bankslipMask('33290001151283004769711002180906987700000010000');
+
+console.log(masked); // '33290.00115 12830.047697 11002.180906 9 87700000010000'
+```
