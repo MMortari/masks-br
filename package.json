@@ -1,7 +1,7 @@
 {
   "name": "masks-br",
   "description": "Máscaras nacionais para Javascript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "author": "Matheus Mortari",
   "license": "MIT",
@@ -18,9 +18,10 @@
     "brazil"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "update": "npm update"
   },
   "devDependencies": {
-    "typescript": "^4.0.5"
+    "typescript": "^4.2.3"
   }
 }

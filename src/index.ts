@@ -193,7 +193,7 @@ interface DinheiroMaskConfig {
  * @example
  * cardMask(1234567891234567)
  * // returns '1234 5678 9123 4567'
- * @param {string} value Valor com máscara
+ * @param {string} value
  */
 export const cardMask = (initialValue: string | number): string => {
   return String(initialValue)
@@ -201,4 +201,14 @@ export const cardMask = (initialValue: string | number): string => {
     .replace(/(\d{4})(\d)/, '$1 $2')
     .replace(/( \d{4})(\d)/, '$1 $2')
     .replace(/( \d{4})(\d)/, '$1 $2');
+};
+
+/**
+ * Máscara de boleto
+ * @exampe
+ * bankslipMask('33290001151283004769711002180906987700000010000')
+ * // returns '33290.00115 12830.047697 11002.180906 9 87700000010000'
+ */
+export const bankslipMask = (initialValue: string | number): string => {
+  return String(initialValue).replace(/^(\d{5})(\d{5})(\d{5})(\d{6})(\d{5})(\d{6})(\d{1})(\d{14})$/, '$1.$2 $3.$4 $5.$6 $7 $8');
 };
